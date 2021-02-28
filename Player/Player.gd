@@ -27,6 +27,7 @@ var roll_vector = Vector2.DOWN
 var stats = PlayerStats # This is a Autoload, so no $ neccesary
 
 func _ready():
+	randomize()
 	#print("Hello, World!!!")
 	#animationPlayer = $AnimationPlayer # Not neccesary if we use "onready"
 	stats.connect("no_health", self, "queue_free") 
